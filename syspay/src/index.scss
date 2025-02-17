@@ -1,0 +1,35 @@
+/* Universal reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove link underlines */
+a {
+  text-decoration: none;
+}
+
+/* Reset images to avoid weird spacing */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset form inputs */
+input, button, textarea {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+body {
+  background-color: #F9FAFB;
+}

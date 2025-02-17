@@ -1,0 +1,131 @@
+.themeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    background-color: white;
+    padding: 0 45px 0 40px;
+    .themeHeader--left {
+        font-size: 36px;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+    }
+    .themeHeader--right {
+        display: flex;
+        align-items: center;
+        .search {
+            .MuiInputBase-root {
+                height: 60px;
+                width: 513px;
+                background-color: #F9FAFB;
+                border: unset;
+                border-radius: 16px;
+                &::before , &::after{
+                    display: none;
+                }
+                &::placeholder {
+                    color: #737791;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: "Poppins", serif;
+                    opacity: 1;
+                }
+            }
+            svg {
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+                color: #5D5FEF;
+                margin-left: 24px;
+                margin-right: 9px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .language {
+            display: flex;
+            align-items: center;
+            margin-right: 58px;
+            margin-left: 58px;
+            .MuiInputBase-root {
+                border: unset;
+                .MuiSelect-select {
+                    color: #374557;
+                    font-size: 18px;
+                    font-family:"Poppins", serif;
+                    font-weight: 600;
+                    margin-right: 6px;
+                    margin-left: 2px;
+                }
+                .MuiSvgIcon-root {
+                    font-size: 18px;
+                    color: #A098AE;
+                }
+            }
+        }
+        .notification {
+            height: 48px;
+            width: 48px;
+            border-radius: 8px;
+            background-color: #FFFAF1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 17px;
+            sup {
+                position: absolute;
+                right: 12px;
+                top: 0px;
+                svg {
+                    font-size: 7px;
+                    color: #EB5757;
+                }
+            }
+            .notificationIcon {
+                color: #FFA412;
+                width: 28px;
+                height: 28px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            img {
+                height: 60px;
+                width: 60px;
+                border-radius: 16px;
+                object-fit: cover;
+                margin-right: 16px;
+            }
+            .profileUser {
+                h4 {
+                    color: #151D48;
+                    font-size: 16px;
+                    font-family:"Poppins", serif;
+                    font-weight: 500;
+                }
+                h6 {
+                    color: #737791;
+                    font-size: 14px;
+                    font-family:"Poppins", serif;
+                    font-weight: 400;
+                }
+            }
+            .profileMenu {
+                button {
+                    svg {
+                        color: #151D48;
+                        font-size: 16px;
+                        margin-top: -18px;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,121 @@
+.themeNavigation {
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+    .logo {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            text-align: center;
+            height: 49px;
+            width: 183px;
+        }
+    }
+    nav {
+        padding-top: 32px;
+        a {
+            display: block;
+            margin: 0 32px;
+            border-radius: 16px;
+            .content {
+                color:#737791;
+                font-size: 18px;
+                font-family: "Poppins", serif;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 64px;
+                position: relative;
+                width: 252px;
+                img {
+                    padding-right: 24px;
+                    position: absolute;
+                    left: 24px;
+                }
+                span {
+                    text-align: left;
+                    position: absolute;
+                    left: 80px;
+                }
+            }
+        }
+        .list--Inactive {
+            &:hover {
+                .content {
+                    color: #1559ED;
+                    img {
+                        filter: brightness(0) saturate(100%) hue-rotate(180deg);
+                    }
+                }
+            }
+        
+        }
+        .list--Active  {
+            background-color: #1559ED;
+            color: white;
+            .content {
+                color: white;
+                img {
+                    filter: brightness(2);
+                }
+                span {
+                    font-weight: 600;
+                }
+            }
+          
+        }
+    }
+    .proFeatures {
+        position: relative;
+        padding-top: 132px;
+        padding-bottom: 132px;
+        #pro-bg {
+        margin: 0 auto;
+        }
+        .text-pro {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            .img {
+                height: 48px;
+                width: 48px;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 16px;
+                margin: auto;
+                margin-bottom: 8px;
+                img {
+                    height: 28px;
+                    width: 28px;
+                }
+            }
+            p {
+                color: white;
+                font-size: 12px;
+                font-family: "Poppins", serif;
+                font-weight: 500;
+                line-height: 16px;
+                span {
+                    display: block;
+                }
+            }
+            button {
+                color: #1559ED;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "Poppins", serif;
+                padding: 0 38.5px;
+                height: 40px;
+                background: white;
+                border-radius: 8px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
