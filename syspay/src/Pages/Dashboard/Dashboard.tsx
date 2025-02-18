@@ -63,7 +63,7 @@ const Dashboard = () => {
     <div className="dashboardPage">
       <section className="section_1">
       <Grid container spacing={3}>
-        <Grid item xs={7}>
+        <Grid item  xs={12} lg={12} xl={7}>
             <div className="sales">
                 <div className="sales-content">
                     <div>
@@ -96,7 +96,7 @@ const Dashboard = () => {
                 </div>
             </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} lg={12} xl={5}>
             <div className="visitorInsights">
               <ThemeHeading text="Visitor Insights" />
               <VisitorInsightsCard />
@@ -112,7 +112,7 @@ const Dashboard = () => {
       </section>
       <section className="section_2">
         <Grid container spacing={3}>
-              <Grid item xs={5}>
+              <Grid item xs={12} md={12} lg={6} xl={5}>
                 <div className="totalRevenue"> 
                   <ThemeHeading text="Total Revenue" />
                   <TotalRevenueCard />
@@ -122,7 +122,7 @@ const Dashboard = () => {
               </div>
                 </div>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12} md={12} lg={6} xl={4}>
                 <div className="customerSatisfaction">
                     <CardLayoutComponent 
                       headingText="Customer Satisfaction"
@@ -137,7 +137,7 @@ const Dashboard = () => {
                      </CardLayoutComponent>
                 </div>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={12} md={12} lg={12} xl={3}>
                   <div className="targetReality">
                       <ThemeHeading text="Target vs Reality" />
                       <TargetRealityGraph />
@@ -172,19 +172,19 @@ const Dashboard = () => {
       </section>
       <section className="section_3">
           <Grid container spacing={3}>
-                <Grid item xs={5}>
+                <Grid item xs={12} md={12} lg={6} xl={5}>
                     <div className="topProductBox">
                         <ThemeHeading text="Top Products" />
                         <TopProductComponent />
                     </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={12} lg={6} xl={4}>
                     <div className="mappingCountry">
                       <ThemeHeading text="Sales Mapping by Country" />
                       <MapComponent />
                     </div>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} md={12} lg={12} xl={3}>
                     <div className="volumeServices">
                       <CardLayoutComponent 
                           headingText="Volume vs Service Level"

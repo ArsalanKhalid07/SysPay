@@ -29,6 +29,9 @@ const Header = () => {
             Dashboard
         </div>
         <div className="themeHeader--right">
+            <div className="search-mobile">
+                    <SearchIcon />
+            </div>
             <div className="search">
                 <Input
                     placeholder="Search here..."

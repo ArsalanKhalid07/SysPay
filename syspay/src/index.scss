@@ -33,3 +33,17 @@ input, button, textarea {
 body {
   background-color: #F9FAFB;
 }
+
+
+.search-mobile {
+  background-color: #1559ED;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  svg {
+    fill: white;
+  }
+}

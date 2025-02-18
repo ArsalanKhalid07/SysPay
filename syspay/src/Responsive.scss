@@ -1,0 +1,112 @@
+@media screen and (max-width: 1650px) {
+    .themeHeader {
+        .themeHeader--right {
+            .search {
+                .MuiInputBase-root  {
+                    width: auto;
+                }
+            } 
+        }
+    }
+    .themeNavigation {
+        nav{
+            a {
+                 .content {
+                    font-size: 16px;
+                 }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 1650px) { 
+    .topProductBox {
+        table {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .themeNavigation  {
+        nav {
+            .content {
+                img {
+                    padding-right: 8px !important;
+                    padding-left: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1330px) { 
+    .topProductBox {
+        table {
+            width: 100%;
+        }
+    }
+    .themeHeader {
+        .themeHeader--left {
+            font-size: 30px;
+        }
+        .themeHeader--right {
+            .search {
+                display: none;
+            } 
+            .language {
+                margin-left: 18px;
+                margin-right: 12px;
+            }
+        }
+    }
+    .themeNavigation {
+        nav {
+            .content {
+                span {
+                    display: none;
+                }
+                img {
+                    margin: auto;
+                }
+            }
+        }
+        .logo {
+            img {
+                width: 142px;
+            }
+        }
+        .proFeatures {
+            display: none;
+        }
+    } 
+}
+
+@media screen and (min-width:1330px) {
+    .search-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .themeHeader {
+        padding: 0 0px 0 40px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .themeHeader {
+        padding: 0 0px 0 40px;
+    }
+    .mainAppComponent {
+        .MuiGrid-grid-xs-2 {
+            display: none;
+        }
+        .MuiGrid-grid-xs-10 {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+} 
