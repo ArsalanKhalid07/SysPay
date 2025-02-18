@@ -16,6 +16,9 @@ import TopProductComponent from "../../Components/TopProduct/TopProductComponent
 import MapComponent from "../../Components/Map/MapComponent";
 import iconDotBlue from "../../Assets/Svgs/Cards/icon-dot-blue.svg";
 import iconDotGreen from "../../Assets/Svgs/Cards/icon-dot-green.svg";
+import iconOrders from "../../Assets/Svgs/Cards/icon-orders.svg";
+import iconPin from "../../Assets/Svgs/Cards/icon-pin.svg";
+import iconUser from "../../Assets/Svgs/Cards/icon-user.svg";
 import "./Dashboard.scss";
 import ServiceLevelComponent from "../../Components/ServiveLevel/ServiceLevelComponent";
 
@@ -33,7 +36,7 @@ const Dashboard = () => {
     },
     {
       cardColor:"#FFF4DE",
-      cardIcon:iconSales,
+      cardIcon:iconOrders,
       cardIconBg:"#FF947A",
       cardText:"Total Order",
       cardPrice:"300",
@@ -41,7 +44,7 @@ const Dashboard = () => {
     },
     {
       cardColor:"#DCFCE7",
-      cardIcon:iconSales,
+      cardIcon:iconPin,
       cardIconBg:"#3CD856",
       cardText:"Product Sold",
       cardPrice:"5",
@@ -49,7 +52,7 @@ const Dashboard = () => {
     },
     {
       cardColor:"#F3E8FF",
-      cardIcon:iconSales,
+      cardIcon:iconUser,
       cardIconBg:"#BF83FF",
       cardText:"New Customers",
       cardPrice:"8",

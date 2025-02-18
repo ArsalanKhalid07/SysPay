@@ -3,6 +3,11 @@
     width: max-content;
     border-radius: 16px;
     padding: 20px;
+    transition: .1s all linear;
+    &:hover {
+        box-shadow: 0 0 3px 0px;
+        cursor: pointer;
+    }
     .salesCard--icon {
         height: 40px;
         width: 40px;
