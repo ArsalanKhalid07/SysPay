@@ -67,7 +67,7 @@
                 p {
                     margin-right: 12px;
                     .loyal {
-                            background-color: #2E96FF;
+                            background-color: #A700FF;
                             height: 12px;
                             width: 12px;
                             border-radius: 2px;
@@ -77,7 +77,17 @@
                             top: 2px;
                         }
                        .new{
-                            background-color: #02B2AF;
+                            background-color: #EF4444;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            margin-right: 4px;
+                            position: relative;
+                            top: 2px;
+                        }
+                        .unique{
+                            background-color: #3CD856;
                             height: 12px;
                             width: 12px;
                             border-radius: 2px;
@@ -90,7 +100,7 @@
                 }
             }
             .MuiChartsAxis-tickLabel {
-                    fill: #464E5F !important;
+                    fill: #7B91B0 !important;
                     font-size: 12px;
         
             }
@@ -159,6 +169,109 @@
             padding: 20px;
             border-radius: 20px;
         }
+        .targetReality {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: white;
+            .targetRealityContent {
+                display: flex;
+                align-items: center;
+                .icon {
+                    margin-right: 10px;
+                }
+                &.TRC--1 {
+                    margin-bottom: 15px;
+                    .icon {
+                        height: 36px;
+                        width: 36px;
+                        background-color: #E2FFF3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 6px;
+                        margin-right: 10px;
+                        img {
+                            height: 17.28px;
+                            width: 17.28px;
+                            
+                        }
+                    }
+                    .ratio {
+                        color: #27AE60;
+                    }
+                }
+                &.TRC--2 {
+                    .icon {
+                        height: 36px;
+                        width: 36px;
+                        background-color: #FFF4DE;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 6px;
+                        img {
+                            height: 17.28px;
+                            width: 17.28px;
+                            
+                        }
+                    }
+                    .ratio {
+                        color: #FFA412;
+                    } 
+                }
+                .text {
+                    h4 {
+                        color: #151D48;
+                        font-size: 12px;
+                        font-family: "Poppins",sans-serif;
+                        font-weight: 600;
+                    }
+                    h6 {
+                        color: #737791;
+                        font-size: 10px;
+                        font-family: "Poppins",sans-serif;
+                        font-weight: 400;
+                    }
+                }
+                .ratio {
+                    font-size: 14px;
+                    font-family: "Poppins",sans-serif;
+                    font-weight: 500;
+                    margin-left: 73px;
+                }
+            
+            }
+        }
     }
-     
+    .section_3 {
+        margin-top: 32px;
+        .topProductBox {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            .theme-heading {
+                padding: 20px 15px 20px 20px;
+            }
+        }
+        .mappingCountry {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: white;
+            .theme-heading {
+                padding-bottom: 20px;
+            }
+        }
+        .volumeServices {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: white;
+        }
+    }     
 }

@@ -1,0 +1,8 @@
+.totalRevenueCard {
+    .MuiBarElement-root {
+        width: 12px !important;
+    }
+    .MuiChartsAxis-tick,.MuiChartsAxis-line {
+        display: none;
+    }
+}

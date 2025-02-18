@@ -1,0 +1,8 @@
+.serviceLevel {
+    .MuiChartsGrid-line,.MuiChartsAxis-root,.MuiChartsLegend-root  {
+        display: none;
+    }
+    .MuiBarElement-root {
+        width: 12px !important;
+    }
+}

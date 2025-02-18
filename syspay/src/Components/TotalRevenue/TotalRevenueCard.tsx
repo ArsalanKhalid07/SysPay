@@ -15,7 +15,7 @@ const TotalRevenueCard = () => {
     'Sunday',
     ];
   return (
-    <div>
+    <div className='totalRevenueCard'>
     <BarChart
       height={315}
       series={[
@@ -23,6 +23,8 @@ const TotalRevenueCard = () => {
         { data: uData, label: 'Offline Sales', id: 'uvId' },
       ]}
       xAxis={[{ data: xLabels, scaleType: 'band' }]}
+      borderRadius={4}
+      
     />
 
     </div>

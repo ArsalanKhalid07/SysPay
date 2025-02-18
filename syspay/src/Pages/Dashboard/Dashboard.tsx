@@ -7,8 +7,17 @@ import VisitorInsightsCard from "../../Components/VisitorInsights/VisitorInsight
 import TotalRevenueCard from "../../Components/TotalRevenue/TotalRevenueCard";
 import CardLayoutComponent from "../../GlobalComponents/CardLayout/CardLayoutComponent";
 import iconSlide from "../../Assets/Svgs/Cards/icon-slide.svg";
+import iconSlideTwo from "../../Assets/Svgs/Cards/icon-slide-2.svg";
+import TargetRealityGraph from "../../Components/TargetReality/TargetRealityGraph";
 import LineGraph  from "../../Components/LinesGraph/LineGraphComponent";
+import iconReal from "../../Assets/Svgs/Cards/icon-real.svg";
+import iconTarget from "../../Assets/Svgs/Cards/icon-target.svg";
+import TopProductComponent from "../../Components/TopProduct/TopProductComponent";
+import MapComponent from "../../Components/Map/MapComponent";
+import iconDotBlue from "../../Assets/Svgs/Cards/icon-dot-blue.svg";
+import iconDotGreen from "../../Assets/Svgs/Cards/icon-dot-green.svg";
 import "./Dashboard.scss";
+import ServiceLevelComponent from "../../Components/ServiveLevel/ServiceLevelComponent";
 
 
 const Dashboard = () => {
@@ -51,7 +60,7 @@ const Dashboard = () => {
     <div className="dashboardPage">
       <section className="section_1">
       <Grid container spacing={3}>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
             <div className="sales">
                 <div className="sales-content">
                     <div>
@@ -84,13 +93,14 @@ const Dashboard = () => {
                 </div>
             </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
             <div className="visitorInsights">
               <ThemeHeading text="Visitor Insights" />
               <VisitorInsightsCard />
               <div className="visitorLable">
                   <p><span className="loyal"></span>Loyal Customers</p>
                   <p><span className="new"></span>New Customers</p>
+                  <p><span className="unique"></span>Unique Customers</p>
 
               </div>
             </div>
@@ -99,7 +109,7 @@ const Dashboard = () => {
       </section>
       <section className="section_2">
         <Grid container spacing={3}>
-              <Grid item xs={6}>
+              <Grid item xs={5}>
                 <div className="totalRevenue"> 
                   <ThemeHeading text="Total Revenue" />
                   <TotalRevenueCard />
@@ -109,7 +119,7 @@ const Dashboard = () => {
               </div>
                 </div>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={4}>
                 <div className="customerSatisfaction">
                     <CardLayoutComponent 
                       headingText="Customer Satisfaction"
@@ -118,17 +128,75 @@ const Dashboard = () => {
                       leftPrice="$3,004"
                       rightPrice="$4,504"
                       rightText="This Month"
-                      rightIcon={iconSlide}
+                      rightIcon={iconSlideTwo}
                      >
                       <LineGraph />
                      </CardLayoutComponent>
                 </div>
               </Grid>
               <Grid item xs={3}>
-                
+                  <div className="targetReality">
+                      <ThemeHeading text="Target vs Reality" />
+                      <TargetRealityGraph />
+                      <div className="targetRealityContent TRC--1">
+                          <div className="icon">
+                              <img src={iconReal} alt="reality" />
+                          </div>
+                          <div className="text">
+                              <h4>Reality Sales</h4>
+                              <h6>Global</h6>
+                          </div>
+                          <div className="ratio">
+                              8.823
+                          </div>
+                      </div>
+                      <div className="targetRealityContent TRC--2">
+                          <div className="icon">
+                            <img src={iconTarget} alt="target" />
+                          </div>
+                          <div className="text">
+                              <h4>Target Sales</h4>
+                              <h6>Commercial</h6>
+                          </div>
+                          <div className="ratio">
+                               12.122
+                          </div>
+                      </div>
+                  </div>
               </Grid>
         </Grid>
       
+      </section>
+      <section className="section_3">
+          <Grid container spacing={3}>
+                <Grid item xs={5}>
+                    <div className="topProductBox">
+                        <ThemeHeading text="Top Products" />
+                        <TopProductComponent />
+                    </div>
+                </Grid>
+                <Grid item xs={4}>
+                    <div className="mappingCountry">
+                      <ThemeHeading text="Sales Mapping by Country" />
+                      <MapComponent />
+                    </div>
+                </Grid>
+                <Grid item xs={3}>
+                    <div className="volumeServices">
+                      <CardLayoutComponent 
+                          headingText="Volume vs Service Level"
+                          leftIcon={iconDotBlue}
+                          leftText="Volume"
+                          leftPrice="1,135"
+                          rightPrice="635"
+                          rightText="Services"
+                          rightIcon={iconDotGreen}
+                      >
+                          <ServiceLevelComponent />
+                      </CardLayoutComponent>
+                    </div>
+                </Grid>
+          </Grid> 
       </section>
     </div>
   )

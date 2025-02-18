@@ -3,6 +3,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-top: 1px solid #EDF2F6;
+        padding-top: 17px;
         .sperator {
             height: 24px;
             width: 1px;
@@ -30,12 +32,6 @@
                 }
             }
          
-        }
-        .right {
-            img {
-                filter: brightness(2);
-            }
-     
         }
     }
 }
