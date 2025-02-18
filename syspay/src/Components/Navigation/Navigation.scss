@@ -25,27 +25,23 @@
                 font-family: "Poppins", serif;
                 font-weight: 400;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 height: 64px;
                 position: relative;
-                width: 252px;
                 img {
                     padding-right: 24px;
-                    position: absolute;
-                    left: 24px;
+                    padding-left: 24px;
                 }
                 span {
                     text-align: left;
-                    position: absolute;
-                    left: 80px;
                 }
             }
         }
         .list--Inactive {
             &:hover {
                 .content {
-                    color: #1559ED;
+                    color: #151D48;
                     img {
                         filter: brightness(0) saturate(100%) hue-rotate(180deg);
                     }

@@ -1,0 +1,157 @@
+.dashboardPage {
+    padding: 32px 32px;
+    .section_1 {
+        .sales {
+            background-color: white;
+            padding: 32px 32px;
+            border-radius: 20px;
+            .sales-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h4 {
+                    color: #737791;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Poppins",sans-serif;
+                }
+                button {
+                    padding: 10px 16px;
+                    color: #0F3659;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #C3D3E2;
+                    background: transparent;
+                    border-radius: 8px;
+                    font-family: "Poppins",sans-serif;
+                    font-weight: 500;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #1559ED;
+                        color: white;
+                        border: 1px solid white;
+                        img {
+                            filter: brightness(1000);
+                        }
+                    }
+                    img {
+                        padding-right: 8px;
+                    }
+                }
+            }
+            .sales-cards {
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+                margin-top: 43px;
+            } 
+        }
+        .visitorInsights {
+            padding: 20px 20px;
+            background-color: white;
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+            .MuiChartsLegend-root {
+                display: none;
+            }
+            .visitorLable {
+                color: #464E5F;
+                font-size: 12px;
+                font-family: "Poppins",sans-serif;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin-right: 12px;
+                    .loyal {
+                            background-color: #2E96FF;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            margin-right: 4px;
+                            position: relative;
+                            top: 2px;
+                        }
+                       .new{
+                            background-color: #02B2AF;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            margin-right: 4px;
+                            position: relative;
+                            top: 2px;
+                        }
+
+                }
+            }
+            .MuiChartsAxis-tickLabel {
+                    fill: #464E5F !important;
+                    font-size: 12px;
+        
+            }
+        }
+    }  
+    .section_2 {
+        margin-top: 32px;
+        .totalRevenue {
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 20px;
+            .MuiChartsAxis-tickLabel{
+                fill:#7B91B0;
+            }
+            .MuiChartsLegend-root {
+                transform: translate(0, 280px) !important;
+                font-size: 12px;
+                height: 12px;
+                display: none;
+                .MuiChartsLegend-series {
+                    height: 12px !important;
+                }
+                rect {
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 2px;
+                }
+            }
+            .totalRevenueLable {
+                color: #464E5F;
+                font-size: 12px;
+                font-family: "Poppins",sans-serif;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin-right: 12px;
+                    .loyal {
+                            background-color: #2E96FF;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            margin-right: 4px;
+                            position: relative;
+                            top: 2px;
+                        }
+                       .new{
+                            background-color: #02B2AF;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            margin-right: 4px;
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+            }
+        }
+    }
+     
+}

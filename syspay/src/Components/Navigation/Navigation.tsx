@@ -67,7 +67,7 @@ import "./Navigation.scss";
         </div>
         <nav>
             {list.map((val,i) => {
-                return (<Link to={val.link} className={`list  ${navigate.pathname == val.link ? "list--Active" : "list--Inactive"}`}>
+                return (<Link to={val.link} className={`list  ${navigate.pathname === val.link ? "list--Active" : "list--Inactive"}`}>
                     <span className="content">
                         <img src={val.icon} alt="dashboard" />
                         <span>{val.text}</span>
