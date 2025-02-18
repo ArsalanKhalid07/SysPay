@@ -1,0 +1,42 @@
+.themeCardLayout {
+    .cardLayout--footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sperator {
+            height: 24px;
+            width: 1px;
+            margin: 0 14px;
+            background-color: #BDC9D3;
+        }
+        .cardLayoutbox {
+            display: flex;
+            align-items: baseline;
+            img {
+                margin-right: 8px;
+            }
+            .text {
+                h4 {
+                    color: #96A5B8;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Poppins",sans-serif;
+                }
+                h6 {
+                    color: #222B45;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "Poppins",sans-serif;
+                }
+            }
+         
+        }
+        .right {
+            img {
+                filter: brightness(2);
+            }
+     
+        }
+    }
+}
+

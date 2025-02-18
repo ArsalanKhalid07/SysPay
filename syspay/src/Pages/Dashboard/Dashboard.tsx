@@ -4,8 +4,11 @@ import ThemeHeading from "../../GlobalComponents/ThemeHeading/ThemeHeading";
 import SalesCard from "../../GlobalComponents/ThemeHeading/SalesCard/SalesCard";
 import iconSales from "../../Assets/Svgs/Sales/icon-sales.svg";
 import VisitorInsightsCard from "../../Components/VisitorInsights/VisitorInsightsCard";
-import "./Dashboard.scss";
 import TotalRevenueCard from "../../Components/TotalRevenue/TotalRevenueCard";
+import CardLayoutComponent from "../../GlobalComponents/CardLayout/CardLayoutComponent";
+import iconSlide from "../../Assets/Svgs/Cards/icon-slide.svg";
+import LineGraph  from "../../Components/LinesGraph/LineGraphComponent";
+import "./Dashboard.scss";
 
 
 const Dashboard = () => {
@@ -95,7 +98,7 @@ const Dashboard = () => {
       </Grid>
       </section>
       <section className="section_2">
-        <Grid container>
+        <Grid container spacing={3}>
               <Grid item xs={6}>
                 <div className="totalRevenue"> 
                   <ThemeHeading text="Total Revenue" />
@@ -108,7 +111,17 @@ const Dashboard = () => {
               </Grid>
               <Grid item xs={3}>
                 <div className="customerSatisfaction">
-                    
+                    <CardLayoutComponent 
+                      headingText="Customer Satisfaction"
+                      leftIcon={iconSlide}
+                      leftText="Last Month"
+                      leftPrice="$3,004"
+                      rightPrice="$4,504"
+                      rightText="This Month"
+                      rightIcon={iconSlide}
+                     >
+                      <LineGraph />
+                     </CardLayoutComponent>
                 </div>
               </Grid>
               <Grid item xs={3}>

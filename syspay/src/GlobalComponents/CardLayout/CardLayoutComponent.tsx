@@ -1,35 +1,45 @@
-import React from 'react';
+import React, { ReactComponentElement } from 'react';
+import iconSlide from "../../Assets/Svgs/Cards/icon-slide.svg"
 import "./CardLayoutComponent.scss";
 import ThemeHeading from '../ThemeHeading/ThemeHeading';
 
 interface CardLayoutComponentProps {
-  headingText: string,
-  children: any,
-  leftIcon: string,
-  leftText: string,
-  leftPrice: string,
+  headingText?: string,
+  children?: any ,
+  leftIcon?: any,
+  leftText?: string,
+  leftPrice?: string,
+  rightIcon?: any,
+  rightText?: string,
+  rightPrice?: string,
 
 }
-const CardLayoutComponent: React.FC<CardLayoutComponentProps> = ({headingText,children,leftIcon,leftText,leftPrice}) => {
+const CardLayoutComponent: React.FC<CardLayoutComponentProps> = ({headingText="heading",children,leftIcon={iconSlide},leftText,leftPrice,rightIcon={iconSlide},rightText,rightPrice}) => {
   return (
     <div className='themeCardLayout'>
-        <ThemeHeading text={headingText} />
-        {children}
+        <div className='cardLayout--header'>
+          <ThemeHeading text={headingText} />
+        </div>
+        <div className='cardLayout--content'>
+            {children}
+        </div>
         <div className='cardLayout--footer'>
             <div className='left cardLayoutbox'>
+            <img src={leftIcon} alt='left icon'/>
               <div className='text'>
-                  <img/>
-                  <p>{leftText}</p>
+                  <h4>{leftText}</h4>
+                  <h6>{leftPrice}</h6>
               </div>
-              <h4>{leftPrice}</h4>
+             
             </div>
             <hr className='sperator'></hr>
             <div className='right cardLayoutbox'>
+            <img src={rightIcon} alt='right icon'/>
               <div className='text'>
-                  <img/>
-                  <p>{leftText}</p>
+                  <h4>{rightText}</h4>
+                  <h6>{rightPrice}</h6>
               </div>
-              <h4>{leftPrice}</h4>
+              
             </div>
         </div>
     </div>
