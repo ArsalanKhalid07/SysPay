@@ -1,42 +1,56 @@
 import React from 'react'
-import { LineChart, lineElementClasses } from '@mui/x-charts/LineChart';
- const LineGraphComponent = () => {
-    
+import "./LineGraphComponent.scss";
+import { Box, Stack } from '@mui/material';
+import {
+  ResponsiveContainer,
+  LineChart,
+  Line,
+  Tooltip,
+  CartesianGrid,
+  XAxis,
+  YAxis
+} from 'recharts';
 
-const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
-const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
-const amtData = [2400, 2210, 0, 2000, 2181, 2500, 2100];
-const xLabels = [
-  'Page A',
-  'Page B',
-  'Page C',
-  'Page D',
-  'Page E',
-  'Page F',
-  'Page G',
-];
+
+ const LineGraphComponent = () => {
+  const data = [
+    { label: 'A', line1: 3, line2: 2 },
+    { label: 'B', line1: -10, line2: -8 },
+    { label: 'C', line1: -2, line2: -1 },
+    { label: 'D', line1: 5, line2: 6 },
+    { label: 'E', line1: 7, line2: 5 },
+    { label: 'F', line1: -2, line2: -3 },
+    { label: 'G', line1: 4, line2: 5 },
+    { label: 'H', line1: 6, line2: 7 }
+  ];
   return (
     <div className='lineGraph'>
-            <LineChart
-            height={300}
-            series={[
-                { data: uData, label: 'uv', area: true, stack: 'total', showMark: false },
-                { data: pData, label: 'pv', area: true, stack: 'total', showMark: false },
-                {
-                data: amtData,
-                label: 'amt',
-                area: true,
-                stack: 'total',
-                showMark: false,
-                },
-            ]}
-            xAxis={[{ scaleType: 'point', data: xLabels }]}
-            sx={{
-                [`& .${lineElementClasses.root}`]: {
-                display: 'none',
-                },
-            }}
+ <Stack direction="row" sx={{ width: '100%' }}>
+      <Box sx={{ flexGrow: 1 }}>
+        <ResponsiveContainer width="100%" height={280}>
+          <LineChart data={data}>
+            <XAxis dataKey="label" hide />
+            <YAxis hide />
+            <Tooltip />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Line
+              type="natural"
+              dataKey="line1"
+              stroke="#8884d8"
+              dot={{ r: 3 }}
+              activeDot={{ r: 5 }}
             />
+            <Line
+              type="natural"
+              dataKey="line2"
+              stroke="#82ca9d"
+              dot={{ r: 3 }}
+              activeDot={{ r: 5 }}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </Box>
+    </Stack>
     </div>
   )
 }

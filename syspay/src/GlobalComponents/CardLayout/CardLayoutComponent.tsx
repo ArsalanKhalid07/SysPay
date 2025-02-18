@@ -1,4 +1,4 @@
-import React, { ReactComponentElement } from 'react';
+import React from 'react';
 import iconSlide from "../../Assets/Svgs/Cards/icon-slide.svg"
 import "./CardLayoutComponent.scss";
 import ThemeHeading from '../ThemeHeading/ThemeHeading';
