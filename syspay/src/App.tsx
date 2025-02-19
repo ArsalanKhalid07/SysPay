@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import Header from './Components/Header/Header';
 import Navigation from './Components/Navigation/Navigation';
 import "./Responsive.scss";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard/>} />
         </Routes>
+        <Footer />
       </Grid>
     </Grid>
  

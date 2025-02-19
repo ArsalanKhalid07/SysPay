@@ -16,6 +16,13 @@
                  }
             }
         } 
+        .proFeatures {
+            padding-right: 20px;
+            padding-left: 20px;
+            .text-pro {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -77,7 +84,7 @@
             }
         }
         .proFeatures {
-            display: none;
+           
         }
     } 
 }
@@ -93,11 +100,38 @@
     .themeHeader {
         padding: 0 0px 0 40px;
     }
+    .proFeatures {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+           img,p {
+            display: none !important;
+           }
+           button {
+            border: 1px solid #1559ED;
+            margin-top: 0px !important;
+            padding: 0 18px !important;
+            &:hover {
+                color: white !important;
+                background-color: #1559ED !important;
+                cursor: pointer;
+            }
+           }
+           .text-pro {
+            position: unset !important;
+            transform: unset !important;
+            .img {
+                display: none !important;
+            }
+           }
+    }
+
 }
+
 
 @media screen and (max-width:920px) {
     .themeHeader {
         padding: 0 0px 0 40px;
+        height: 80px;
     }
     .mainAppComponent {
         .MuiGrid-grid-xs-2 {
@@ -109,4 +143,98 @@
             min-width: 100%;
         }
     }
+    .themeHeader--left {
+        .pageText {
+            display: none;
+        }
+        .headerLeft--mobile {
+            display: block;
+        }
+    }
+
+    .dashboardPage {
+        padding: 20px 20px;
+        .section_2,.section_3 {
+            padding-top: 0px;
+        }
+     }
+
 } 
+@media screen and (min-width:920px) {
+    .themeHeader--left {
+        .pageText {
+            display: block;
+        }
+        .headerLeft--mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:620px) {
+    .themeHeader--right {
+        .search-mobile {
+            display: none !important;
+        }
+        .language {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width:536px) {
+    .salesCard {
+        width: 100%;
+        min-width: 100%;
+    }
+    .topProduct {
+        table  {
+            thead {
+                tr {
+                    th {
+                        &:nth-child(1) {
+                            padding-left: 2px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 12px !important;
+                        &:nth-child(1) {
+                            padding-left: 2px;
+                        }
+                    }
+                }
+            }
+        } 
+    } 
+    .section_2,.section_3 {
+        padding-top: 0px !important;
+    }
+  
+}
+
+@media screen and (max-width:460px) {
+    .themeHeader {
+        padding: 0 0 0 10px;
+    }
+ .sales-cards {
+    .card-item {
+        width: 100%;
+    }
+ }
+ .dashboardPage {
+    .section_1 {
+        .sales  {
+            padding: 20px 20px;
+            .sales-content {
+                button {
+                    padding: 10px 12px;
+                }
+            }
+        }
+    }
+ }
+}

@@ -130,3 +130,41 @@
 
     }
 }
+
+.headerLeft--mobile {
+    .menu-icon {
+        background-color: #CDE7FF;
+        height: 46px;
+        width: 46px;
+        min-width: 46px;
+        svg {
+            font-size: 25px;
+        }
+    }
+}
+
+.drawerNavigation  {
+    .themeNavigation {
+        nav {
+            .content {
+                img {
+                    margin: unset;
+                }
+                span {
+                    display: block;
+                }
+            }
+        }
+        .logo {
+            height: 80px;
+            padding-top: 25px;
+        }
+    }
+    .proFeatures {
+        button {
+            width: 70%;
+            font-size: 18px;
+            height: 80px;
+        }
+    }
+}
