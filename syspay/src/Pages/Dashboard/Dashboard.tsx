@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import exportIcon from "../../Assets/Svgs/icon-export.svg";
 import ThemeHeading from "../../GlobalComponents/ThemeHeading/ThemeHeading";
-import SalesCard from "../../GlobalComponents/ThemeHeading/SalesCard/SalesCard";
+import SalesCard from "../../GlobalComponents/CardLayout/SalesCard/SalesCard";
 import iconSales from "../../Assets/Svgs/Sales/icon-sales.svg";
 import VisitorInsightsCard from "../../Components/VisitorInsights/VisitorInsightsCard";
 import TotalRevenueCard from "../../Components/TotalRevenue/TotalRevenueCard";
