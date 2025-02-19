@@ -3,4 +3,13 @@
         width: 100%;
         border: unset;
     }
+    .map-unselected {
+        fill:#ECECEC;
+    }
+    .map-selected {
+        fill: #8950FC;
+    }
+    .map-img {
+        width: 100%;
+    }
 }
